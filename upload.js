@@ -23,16 +23,11 @@ angular.module('tyaslab.upload', [])
         scope : {
             id : '@',
             ngModel : '=',
-            index : '@',
             action : '@',
             accept : '@',
             name : '@'
         },
         link : function(scope, element, attrs, ctrls) {
-            scope.$watch('index', function(newVal, oldVal) {
-                scope.index = parseInt(newVal);
-            });
-            
             element.find('a').on('click', function() {
                 element.find('[type=file]').click();
             });
