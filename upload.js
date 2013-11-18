@@ -1,6 +1,7 @@
 /* USAGE
  * 
  * <div id="upload-{{ $index }}" data-tyaslab-upload
+ *      data-ng-model="object.image"
  *      data-name="filename"
  *      data-action="/upload/image/"
  *      data-accept="image/*">
